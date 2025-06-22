@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { FaHtml5, FaCss3Alt , FaJs, FaReact, FaNode,FaPython , FaGitAlt, FaDocker } from "react-icons/fa";
-import { SiTailwindcss, SiTypescript, SiMongodb, SiPostgresql, SiMysql, SiNextdotjs, SiDjango, SiPostman, SiRender, SiVercel ,SiFirebase} from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNode, FaPython, FaGitAlt, FaDocker } from "react-icons/fa";
+import { SiTailwindcss, SiTypescript, SiMongodb, SiPostgresql, SiMysql, SiNextdotjs, SiDjango, SiPostman, SiRender, SiVercel, SiFirebase } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 
 const skills = [
     { name: "HTML", icon: <FaHtml5 />, category: "frontend" },
-    { name: "CSS", icon: <FaCss3Alt/> , category: "frontend" },
+    { name: "CSS", icon: <FaCss3Alt />, category: "frontend" },
     { name: "JavaScript", icon: <FaJs />, category: "frontend" },
     { name: "TypeScript", icon: <SiTypescript />, category: "frontend" },
     { name: "React", icon: <FaReact />, category: "frontend" },
@@ -46,7 +46,6 @@ function SkillsSection() {
                         <button key={key} className={cn("px-5 py-2 rounded-full transition-colors duration-300 capitalize", active === category ? 'bg-primary text-primary-foreground' : 'bg-secondary/70 text-foreground hover:bg-secondary')}
                             onClick={() => setActive(category)}>{category}</button>
                     ))}
-
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {filteredSkills.map((skill, key) => (
@@ -63,6 +62,6 @@ function SkillsSection() {
             </div>
         </section>
     )
-}
+};
 
-export default SkillsSection
+export default SkillsSection;

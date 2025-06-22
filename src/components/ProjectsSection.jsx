@@ -1,6 +1,6 @@
 import { ExternalLink, Github } from "lucide-react";
 import { useEffect } from "react";
-import { cn } from "@/lib/utils"; 
+import { cn } from "@/lib/utils";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -30,18 +30,20 @@ const projects = [
     img: "/projects/project3.png",
     tags: ["React", "Tailwind CSS", "Vercel"],
     demoUrl: "#",
-    githubRepo: "#",
+    githubRepo: "https://github.com/Vishal-Singh-Code/Portfolio",
   },
 ];
 
 function ProjectsSection() {
-    useEffect(() => {
-  AOS.init({
-    duration: 800, 
-    once: false  
-  });
-    AOS.refresh(); 
-}, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
@@ -54,12 +56,10 @@ function ProjectsSection() {
 
         <div className="space-y-20">
           {projects.map((project, index) => (
-            <div
-              key={project.id}
-              className={cn(
-                "flex flex-col md:flex-row items-center gap-10",
-                index % 2 === 1 && "md:flex-row-reverse"
-              )}
+            <div key={project.id} className={cn(
+              "flex flex-col md:flex-row items-center gap-10",
+              index % 2 === 1 && "md:flex-row-reverse"
+            )}
               data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             >
               <div className="md:w-1/2 rounded-lg overflow-hidden shadow-md">
@@ -75,10 +75,7 @@ function ProjectsSection() {
                 <p className="text-muted-foreground">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full"
-                    >
+                    <span key={tag} className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full">
                       {tag}
                     </span>
                   ))}
@@ -124,6 +121,6 @@ function ProjectsSection() {
       </div>
     </section>
   );
-}
+};
 
 export default ProjectsSection;

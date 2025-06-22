@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
-import { Sun, Moon } from 'lucide-react'
+import { useEffect, useState } from 'react';
+import { Sun, Moon } from 'lucide-react';
 import { cn } from "@/lib/utils";
 
 function ThemeToggle() {
@@ -40,6 +40,6 @@ function ThemeToggle() {
             }
         </button>
     )
-}
+};
 
-export default ThemeToggle
+export default ThemeToggle;

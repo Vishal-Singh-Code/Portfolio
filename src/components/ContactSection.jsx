@@ -1,10 +1,12 @@
-import { Mail, Phone, MapPin, Instagram, LinkedinIcon, Send , X as TwitterIcon } from "lucide-react"
+import { Mail, Phone, MapPin, Instagram, LinkedinIcon, Send, X as TwitterIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useToast } from "@/hooks/use-toast"
+import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+
 function ContactSection() {
     const { toast } = useToast();
     const [isSubmitting, setIsSubmitting] = useState(false)
+
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsSubmitting(true);
@@ -16,7 +18,8 @@ function ContactSection() {
             e.target.reset();
             setIsSubmitting(false);
         }, 1500)
-    }
+    };
+
     return (
         <section id="contact" className="py-24 px-4 relative bg-secondary/30">
             <div className="container mx-auto max-w-5xl ">
@@ -24,12 +27,12 @@ function ContactSection() {
                     <span className="text-primary">Touch</span>
                 </h2>
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta facilis recusandae, iste
+                    Feel free to reach out for collaborations, opportunities, or just a friendly chat.<br />I'm always open to connecting!
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="space-y-8">
+                        {/* Contact Information */}
                         <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-
                         <div className="space-y-6 justify-center">
                             <div className="flex items-start space-x-4">
                                 <div className="p-3 rounded-full bg-primary/10 shadow-sm">
@@ -48,7 +51,6 @@ function ContactSection() {
                                     <h4 className="font-medium text-left">Phone</h4>
                                     {/* <a href="tel:+919393939393" className="text-muted-foreground hover:text-primary transition-colors">+919393939393</a> */}
                                     <a className="text-muted-foreground">Available upon request</a>
-
                                 </div>
                             </div>
                             <div className="flex items-start space-x-4">
@@ -60,8 +62,8 @@ function ContactSection() {
                                     <a className="text-muted-foreground hover:text-primary transition-colors duration-300">Faridabad, Haryana</a>
                                 </div>
                             </div>
-
                         </div>
+                        {/* Connect with me */}
                         <div className="pt-8">
                             <h4 className="font-medium mb-4">Connect With Me</h4>
                             <div className="flex space-x-4 justify-center">
@@ -77,6 +79,7 @@ function ContactSection() {
                             </div>
                         </div>
                     </div>
+                    {/* Send a Message */}
                     <div className="bg-card p-8 rounded-lg shadow-lg border border-muted">
                         <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
                         <form action="" className="space-y-6" onSubmit={handleSubmit} autoComplete="off">
@@ -95,13 +98,14 @@ function ContactSection() {
                             <button type="submit" disabled={isSubmitting} className={cn("cosmic-button w-full flex items-center justify-center gap-2 ", {
                                 "opacity-50 cursor-not-allowed": isSubmitting
                             })}>
-                                {isSubmitting ? "Sending..." : "Send Message"}<Send size={16} /></button>
+                                {isSubmitting ? "Sending..." : "Send Message"}<Send size={16} />
+                            </button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
     )
-}
+};
 
-export default ContactSection
+export default ContactSection;
