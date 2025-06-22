@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 const projects = [
   {
     id: 1,
-    title: "Aniplex",
+    title: "Aniverse",
     description: "An interactive anime database website inspired by IMDb, built with Django. Users can explore, search, and view detailed info about their favorite anime series and movies — all in a clean, responsive interface.",
     img: '/projects/project1.png',
     tags: ["HTML", "CSS", "Django"],
@@ -29,7 +29,7 @@ const projects = [
     description: "A fully responsive personal portfolio built with React.js and Tailwind CSS. It showcases my projects, tech stack, and contact info with clean UI, dark/light mode, and smooth animations.",
     img: "/projects/project3.png",
     tags: ["React", "Tailwind CSS", "Vercel"],
-    demoUrl: "#",
+    demoUrl: "https://portfolio-ten-rho-73.vercel.app/",
     githubRepo: "https://github.com/Vishal-Singh-Code/Portfolio",
   },
 ];
