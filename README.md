@@ -2,7 +2,7 @@
 
 This is my personal portfolio website built using **React**, **Vite**, and **Tailwind CSS**. It showcases my projects, skills, contact information, and more in a sleek, responsive single-page design.
 
-Live Demo: [https://portfolio-ten-rho-73.vercel.app/](https://portfolio-ten-rho-73.vercel.app/)  
+Live Demo: [https://vishal-singh-code.vercel.app/](https://vishal-singh-code.vercel.app/)  
 GitHub Repo: [https://github.com/Vishal-Singh-Code/Portfolio](https://github.com/Vishal-Singh-Code/Portfolio)
 
 ---
