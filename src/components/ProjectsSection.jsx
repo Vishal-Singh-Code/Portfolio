@@ -7,12 +7,12 @@ import 'aos/dist/aos.css';
 const projects = [
   {
     id: 1,
-    title: "Aniverse",
-    description: "An interactive anime database website inspired by IMDb, built with Django. Users can explore, search, and view detailed info about their favorite anime series and movies — all in a clean, responsive interface.",
-    img: '/projects/project1.png',
-    tags: ["HTML", "CSS", "Django"],
-    demoUrl: "#",
-    githubRepo: "https://github.com/Vishal-Singh-Code/Aniverse",
+    title: "JobLane",
+    description: "A full-stack job hiring platform, built using Django and React. JobLane enables job seekers to search and apply for jobs while allowing recruiters to post vacancies and manage applicants — all in a modern, responsive interface with JWT-based authentication and Google login.",
+    img: '/projects/project4.png',
+    tags: ["React", "Tailwind CSS", "Django", "PostgreSQL", "JWT"],
+    demoUrl: "https://joblane-frontend.vercel.app/",
+    githubRepo: "https://github.com/vishal-singh-code/joblane-frontend",
   },
   {
     id: 2,
@@ -25,6 +25,15 @@ const projects = [
   },
   {
     id: 3,
+    title: "Aniverse",
+    description: "An interactive anime database website inspired by IMDb, built with Django. Users can explore, search, and view detailed info about their favorite anime series and movies — all in a clean, responsive interface.",
+    img: '/projects/project1.png',
+    tags: ["HTML", "CSS", "Django"],
+    demoUrl: "#",
+    githubRepo: "https://github.com/Vishal-Singh-Code/Aniverse",
+  },
+  {
+    id: 4,
     title: "Portfolio Website",
     description: "A fully responsive personal portfolio built with React.js and Tailwind CSS. It showcases my projects, tech stack, and contact info with clean UI, dark/light mode, and smooth animations.",
     img: "/projects/project3.png",
