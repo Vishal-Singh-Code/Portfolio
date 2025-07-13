@@ -1,32 +1,28 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNode, FaPython, FaGitAlt, FaDocker } from "react-icons/fa";
-import { SiTailwindcss, SiTypescript, SiMongodb, SiPostgresql, SiMysql, SiNextdotjs, SiDjango, SiPostman, SiRender, SiVercel, SiFirebase } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaGitAlt } from "react-icons/fa";
+import { SiTailwindcss, SiMysql, SiNextdotjs, SiDjango, SiPostman, SiRender, SiVercel, SiCloudinary } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 
 const skills = [
     { name: "HTML", icon: <FaHtml5 />, category: "frontend" },
     { name: "CSS", icon: <FaCss3Alt />, category: "frontend" },
     { name: "JavaScript", icon: <FaJs />, category: "frontend" },
-    { name: "TypeScript", icon: <SiTypescript />, category: "frontend" },
     { name: "React", icon: <FaReact />, category: "frontend" },
     { name: "Next.js", icon: <SiNextdotjs />, category: "frontend" },
     { name: "Tailwind CSS", icon: <SiTailwindcss />, category: "frontend" },
 
     { name: "Python", icon: <FaPython />, category: "backend" },
     { name: "Django", icon: <SiDjango />, category: "backend" },
-    { name: "Node.js", icon: <FaNode />, category: "backend" },
-    { name: "MongoDB", icon: <SiMongodb />, category: "backend" },
     { name: "PostgreSQL", icon: <SiPostgresql />, category: "backend" },
     { name: "MySQL", icon: <SiMysql />, category: "backend" },
 
     { name: "Git/GitHub", icon: <FaGitAlt />, category: "tools" },
     { name: "VS Code", icon: <TbBrandVscode />, category: "tools" },
     { name: "Postman", icon: <SiPostman />, category: "tools" },
-    { name: "Docker", icon: <FaDocker />, category: "tools" },
+    { name: "Cloudinary", icon: <SiCloudinary />, category: "tools" },
     { name: "Render", icon: <SiRender />, category: "tools" },
     { name: "Vercel", icon: <SiVercel />, category: "tools" },
-    { name: "Firebase", icon: <SiFirebase />, category: "tools" },
 ];
 
 const categories = ['all', 'frontend', 'backend', 'tools'];
