@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaGitAlt } from "react-icons/fa";
-import { SiTailwindcss, SiMysql, SiNextdotjs, SiDjango, SiPostman, SiRender, SiVercel, SiCloudinary } from "react-icons/si";
+import { SiTailwindcss, SiPostgresql, SiMysql, SiNextdotjs, SiDjango, SiPostman, SiRender, SiVercel, SiCloudinary } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 
 const skills = [
